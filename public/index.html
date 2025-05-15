@@ -4,34 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit & Health</title>
+
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/js/script.js">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <header>
+        <!-- Header desktop -->
         <div class="header-desktop">
             <div class="header-logo">
-
-                <img src="/assets/img/Thiết kế chưa có tên (1).png" alt="logo_AF">
-
+                <img src="/assets/img/Thiết kế chưa có tên (1) (1).png" alt="logo_AF">
             </div>
             <form class="search-bar">
                 <input type="text" placeholder="Tìm kiếm sản phẩm..." />
                 <button type="submit"><i class="fa fa-magnifying-glass"></i></button>
             </form>
-
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <a href="#" class="navbar-link">Trang chủ</a>
-                    <a href="#" class="navbar-link">Giới thiệu</a>
-                    <a href="#" class="navbar-link">Dịch vụ</a>
-                    <a href="#" class="navbar-link">Liên hệ</a>
+                    <li><a href="#" class="navbar-link">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="navbar-link">Sản phẩm <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Sản phẩm bán chạy</a>
+                            <a href="#">Hoa quả nội địa</a>
+                            <a href="#">Hoa quả nhập khẩu</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="navbar-link">Giới thiệu</a></li>
+                    <li><a href="#" class="navbar-link">Hệ thống cửa hàng</a></li>
+                    <li><a href="#" class="navbar-link">Liên hệ</a></li>
+                    <li><a href="#" class="cart">
+                            Giỏ hàng <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
+        <!-- Header mobile -->
+        <div class="header-mobile">
+            <div class="header-logo">
+                <img src="/assets/img/Thiết kế chưa có tên (1) (1).png" alt="logo_AF">
+            </div>
+            <div class="header-mobile-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Offcanvas Menu -->
+            <div id="offcanvas-menu" class="offcanvas-menu">
+                <button id="offcanvas-close" class="offcanvas-close">&times;</button>
+                <form class="search-bar-mobile">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit"><i class="fa fa-magnifying-glass"></i></button>
+                </form>
+                <nav class="navbar-mobile">
+                    <a href="#">Trang chủ</a>
+
+                    <div class="offcanvas-dropdown">
+                        <a href="#" class="dropdown-toggle">Sản phẩm <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-list">
+                            <a href="#">Sản phẩm bán chạy</a>
+                            <a href="#">Hoa quả nội địa</a>
+                            <a href="#">Hoa quả nhập khẩu</a>
+                        </div>
+                    </div>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Liên hệ</a>
+                </nav>
+
+            </div>
+
+
+        </div>
+
     </header>
     <main>
         <section class=""></section>
@@ -39,6 +85,9 @@
     <footer>
 
     </footer>
+
+
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
