@@ -1,0 +1,97 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header tổng */
+.header-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.header-logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Navbar */
+.navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #007bff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 12px;
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px;
+    color: #555;
+}
+
+.search-bar button:hover {
+    color: #007bff;
+}
+
+/* Optional: phần tìm kiếm */
+.search-header-desktop {
+    display: none;
+    /* hoặc style tùy theo nhu cầu */
+}
+
+/* Responsive: nếu cần hỗ trợ mobile sau */
+@media (max-width: 768px) {
+    .header-desktop {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 12px;
+    }
+}
